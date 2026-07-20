@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        3EC1 - TIME TABLE
+    </title>
+
+</head>
+
+<BODY>
+    <table border="1">
+        <tr> <!--1-->
+            <td rowspan="7" colspan="7">
+                <img src="MU LOGO.png" alt="MU LOGO" />
+            </td>
+            <td rowspan="7" colspan="9">
+                <p>FACULTY OF ENGINEERING AND TECHNOLOGY</p>
+                <p>Department of Computer Engineering </p>
+                <p>Class Room:- MA201, MA211,MA507, MB606</p>
+                <p>Semester:- III</p>
+                <p>Class Coordinator: Prof. Parita Mer (9664877780) - MA208E</p>
+            </td>
+            <td rowspan="7" colspan="7">
+                <p>With Effect From Date:- 10/07/2026</p>
+                <p>Division:- EC1</p>
+            </td>
+        <tr></tr> <!--2-->
+        <tr></tr> <!--3-->
+        <tr></tr> <!--4-->
+        <tr></tr> <!--5-->
+        <tr></tr> <!--6-->
+        <tr></tr> <!--7-->
+        <tr>
+            <!--8-->
+            <td style="background-color: darkgray;">Sr</td>
+            <td colspan="2" style="background-color: darkgray;">
+                <center>Time</center>
+            </td>
+            <td colspan="4" style="background-color: darkgray;">
+                <center>Mon</center>
+            </td>
+            <td colspan="4" style="background-color: darkgray;">
+                <center>Tues</center>
+            </td>
+            <td colspan="4" style="background-color: darkgray;">
+                <center>Wed</center>
+            </td>
+            <td colspan="4" style="background-color: darkgray;">
+                <center>Thurs</center>
+            </td>
+            <td colspan="4" style="background-color: darkgray;">
+                <center>Fri</center>
+            </td>
+        </tr>
+        <tr>
+            <!--9-->
+            <td rowspan="2">1</td>
+            <td rowspan="2">7:30 to 8:30</td>
+            <td rowspan="3"> 7:30 to 9:00 </td>
+            <td rowspan="2" colspan="4">
+                <pre><center>QLA  - JDM
+PG3SHA</center>
+
+                    </pre>
+            </td>
+            <td rowspan="3" colspan="2">
+                <pre><center>A
+DS
+CSB
+MB303</center>
+
+                    </pre>
+            </td>
+            <td rowspan="3" colspan="2">
+                <pre><center>B
+DS
+KNM
+MB303</center>
+
+                    </pre>
+            </td>
+            <td rowspan="3" colspan="2">
+                <pre><center>A
+AJT
+KUK
+MB302</center>
+
+                    </pre>
+            </td>
+            <td rowspan="3" colspan="2">
+                <pre><center>B
+AJT
+SRK
+MB302</center>
+
+                    </pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center> PS - PCS <br>MA211</center>
+                           
+                        </pre>
+            </td>
+            <td rowspan="3" colspan="4" style="background-color: yellow;">
+                <mark>
+
+                    <pre><center><mark> WT - CMV
+MA201</mark></center>
+                            
+                        </pre>
+                </mark>
+            </td>
+        </tr>
+        <tr><!--10--></tr>
+        <tr>
+            <!--11-->
+            <td rowspan="2">2</td>
+            <td rowspan="2">08:30 to 09:30</td>
+            <td colspan="4">
+                <pre><center>LIBRARY</center></pre>
+            </td>
+        </tr>
+        <tr>
+            <!--12-->
+            <td rowspan="1">
+                09:00 to 10:00 
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>PS - T - PCS
+MA201</center></pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>LIBRARY</center></pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>WT - CMV
+MB202</center></pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>LIBRARY</center></pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>LIBRARY</center></pre>
+            </td>
+        </tr>
+        <tr>
+            <!--13-->
+            <td rowspan="2">
+                <pre>3</pre>
+            </td>
+            <td rowspan="2">
+                09:30 to 10:00
+            </td>
+        </tr>
+        <tr>
+            <!--14-->
+        </tr>
+        <tr>
+            <!--15-->
+            <td style="background-color: darkgray;"></td>
+            <td colspan="2" style="background-color: darkgray;">
+                <center>10:00 - 10:30</center>
+            </td>
+            <td colspan="19" style="background-color: darkgray;">
+                <center>Break</center>
+            </td>
+        </tr>
+        <tr>
+            <!--16-->
+            <td rowspan="2">4</td>
+            <td rowspan="2">
+                <center>10:30 to 11:00</center>
+            </td>
+            <td rowspan="3">
+                <center>10:30 to 12:00</center>
+            </td>
+            <td rowspan="3" colspan="4">
+                <center>
+                    <pre>AJT - KUK
+MA507</pre>
+                </center>
+            </td>
+            <td rowspan="3" colspan="4">
+                <center>
+                    <pre>ADBMS - RVA
+PG3SHA</pre>
+                </center>
+            </td>
+            <td rowspan="3" colspan="4">
+                <center>
+                    <pre>DS - CSB
+PG3SHA</pre>
+                </center>
+            </td>
+            <td rowspan="3" colspan="4" style="background-color: yellow;">
+                <center>
+                    <pre><mark>AJT - KUK
+MA209</mark></pre>
+                </center>
+            </td>
+            <td rowspan="3" colspan="4" style="background-color: yellow;">
+                <center>
+                    <pre><mark>PS - PCS
+MB205A</mark></pre>
+                </center>
+            </td>
+        </tr>
+
+        <tr>
+            <!--17-->
+        </tr>
+        <tr>
+            <!--18-->
+            <td rowspan="2">5</td>
+            <td rowspan="2">11:30 to 12:30</td>
+        </tr>
+        <tr>
+            <!--19-->
+            <td>12:00 to 1:30</td>
+            <td rowspan="3" colspan="2">
+                <center>
+                    <pre>A
+WT
+CMV
+MC213</pre>
+                </center>
+            </td>
+            <td rowspan="3" colspan="2">
+                <pre><center>B
+ADBMS
+PMJ
+MC222</center></pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>DS - CSB
+PG3SHA</center></pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>ADBMS - RVA
+PG3SHA</center></pre>
+            </td>
+            <td rowspan="3" colspan="4">
+                <pre><center>LIBRARY</center></pre>
+            </td>
+            <td rowspan="3" colspan="2">
+                <pre><center>A
+ADBMS
+PMJ
+MB010</center></pre>
+            </td>
+            <td rowspan="3" colspan="2">
+                <pre><center>B
+WT
+CMV
+MA207</center></pre>
+            </td>
+        </tr>
+
+        <tr>
+            <!--20-->
+            <td rowspan="2">6</td>
+            <td rowspan="2">12:30 to 1:30</td>
+        </tr>
+        <tr><!--21--></tr>
+        <tr><!--22--></tr>
+        <tr>
+            <!--23-->
+            <td colspan="7" style="background-color: darkgray;">SUBJECT INITIALS, CODES AND NAMES</td>
+            <td colspan="5" style="background-color: darkgray;">LAB PREMISES</td>
+            <td colspan="12" style="background-color: darkgray;">FACULTY INITIALS AND NAMES</td>
+        </tr>
+        <tr>
+            <!--24-->
+            <td><strong>AJT</strong></td>
+            <td>01CE0308 </td>
+            <td colspan="5">ADVANCE JAVA TECHNOLOGY</td>
+            <td><strong>AJT</strong></td>
+            <td colspan="4">MB302</td>
+            <td>KUK</td>
+            <td colspan="4">Prof. Kunal Khimani</td>
+            <td><strong>JDM</strong></td>
+            <td colspan="5"><strong>Prof. Jignesh Merja</strong></td>
+        </tr>
+        <tr>
+            <!--25-->
+            <td><strong>ADBMS</strong></td>
+            <td>01CE0310 </td>
+            <td colspan="5">ADVANCE DATABASE MANAGEMENT SYSTEM</td>
+            <td><strong>ADBMS</strong></td>
+            <td colspan="4">MC222, MB010</td>
+            <td><strong>SRK</strong></td>
+            <td colspan="4">Prof. Sweta Khatana</td>
+            <td></td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <!--26-->
+            <td><strong>DS</strong></td>
+            <td>01CE1301 </td>
+            <td colspan="5">DATA STRUCTURE</td>
+            <td><strong>DS</strong></td>
+            <td colspan="4">MB303</td>
+            <td><strong>RVA</strong></td>
+            <td colspan="4">Dr. Rachit Adhvaryu</td>
+            <td></td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <!--27-->
+            <td><strong>WT</strong></td>
+            <td>01CE1306 </td>
+            <td colspan="5">WEB TECHNOLOGY</td>
+            <td><strong>WT</strong></td>
+            <td colspan="4">MA207, MC213</td>
+            <td><strong>PMJ</strong></td>
+            <td colspan="4">Prof. Parita Mer</td>
+            <td></td>
+            <td colspan="5"></td>
+        </tr>        <tr>
+            <!--28-->
+            <td><strong>PS</strong></td>
+            <td>01CE0309</td>
+            <td colspan="5">PROBABILITY AND STATISTICS </td>
+            <td><strong></strong></td>
+            <td colspan="4"></td>
+            <td><strong>CSB</strong></td>
+            <td colspan="4">Prof. Chirag Bhalodia</td>
+            <td></td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <!--29-->
+            <td><strong>QLA</strong></td>
+            <td>01CR0303</td>
+            <td colspan="5">QUANTITATIVE & LOGICAL ABILITY-1</td>
+            <td><strong></strong></td>
+            <td colspan="4"></td>
+            <td><strong></strong></td>
+            <td colspan="4">Prof. Kishan Makadiya</td>
+            <td></td>
+            <td colspan="5"></td>
+        </tr>        <tr>
+            <!--30-->
+            <td><strong></strong></td>
+            <td></td>
+            <td colspan="5"></td>
+            <td><strong></strong></td>
+            <td colspan="4"></td>
+            <td><strong>CMV</strong></td>
+            <td colspan="4">Prof. Charmy Vora</td>
+            <td></td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <!--31-->
+            <td><strong></strong></td>
+            <td></td>
+            <td colspan="5"></td>
+            <td><strong></strong></td>
+            <td colspan="4"></td>
+            <td><strong>PCS</strong></td>
+            <td colspan="4">Prof. Paras Shingadiya</td>
+            <td></td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <!--32-->
+            <td rowspan="4" colspan="10"><center>TIME-TABLE INCHARGE</center></td>
+            <td rowspan="4" colspan="13"><center>H.O.D</center></td>
+        </tr>
+        <tr rowspan="4" colspan="10"></tr>
+        <tr rowspan="4" colspan="10"></tr>
+        <tr rowspan="4" colspan="10"></tr>
+        </tr>
+    </table>
+</BODY>
+
+</html>
