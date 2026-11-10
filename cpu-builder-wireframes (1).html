@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Build-Your-Own-CPU/PC — Wireframes</title>
+<style>
+  :root{
+    --ink:#2b2f36; --line:#8a93a3; --line-soft:#c7cdd6; --panel:#f4f5f7;
+    --accent:#5568d3; --accent-soft:#e4e7fb; --bg:#eef0f3;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:'Segoe UI',Arial,sans-serif; background:var(--bg); color:var(--ink);
+  }
+  .app{ display:flex; min-height:100vh; }
+
+  /* Sidebar nav */
+  .sidebar{
+    width:230px; background:#1f2330; color:#e8e9ee; flex-shrink:0; padding:18px 14px;
+  }
+  .sidebar h1{ font-size:15px; margin:0 0 4px; color:#fff; }
+  .sidebar p.sub{ font-size:11px; color:#9aa0b4; margin:0 0 18px; }
+  .group-label{ font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:#8288a0; margin:14px 0 6px 4px; }
+  .nav-btn{
+    display:block; width:100%; text-align:left; background:transparent; border:none; color:#cfd2e0;
+    padding:8px 10px; border-radius:6px; font-size:13px; cursor:pointer; margin-bottom:2px;
+  }
+  .nav-btn:hover{ background:#2b3044; }
+  .nav-btn.active{ background:var(--accent); color:#fff; }
+  .nav-btn .n{ display:inline-block; width:18px; color:#8288a0; }
+  .nav-btn.active .n{ color:#dfe2ff; }
+
+  /* Main area */
+  .main{ flex:1; padding:26px 34px; overflow-x:auto; }
+  .page-title{ font-size:20px; margin:0 0 2px; }
+  .page-desc{ font-size:13px; color:#5a6070; margin:0 0 18px; max-width:800px; }
+
+  .frame{
+    background:#fff; border:1px solid var(--line-soft); border-radius:6px; width:100%;
+    box-shadow:0 1px 3px rgba(0,0,0,.08); overflow:hidden;
+  }
+  .wf-box{
+    border:1.5px dashed var(--line); border-radius:4px; background:var(--panel);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    color:#555b68; font-size:12px; padding:6px; line-height:1.4;
+  }
+  .wf-box.solid{ border-style:solid; background:#fff; }
+  .wf-box.accent{ background:var(--accent-soft); border-color:var(--accent); color:#3a3f8f; font-weight:600;}
+  .label-tag{
+    position:relative;
+  }
+  .row{ display:flex; gap:10px; }
+  .col{ display:flex; flex-direction:column; gap:10px; }
+  .grow{ flex:1; }
+
+  .annot{
+    margin-top:16px; max-width:100%; background:#fff; border:1px solid var(--line-soft); border-radius:6px; padding:14px 18px;
+  }
+  .annot h3{ margin:0 0 8px; font-size:14px; }
+  .annot ul{ margin:0; padding-left:18px; font-size:13px; color:#3c4150; line-height:1.6; }
+  .annot li b{ color:var(--ink); }
+
+  .tabpane{ display:none; }
+  .tabpane.active{ display:block; }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <h1>🖥️ CPU / PC Builder</h1>
+    <p class="sub">Wireframe map — 10 screens</p>
+
+    <div class="group-label">Client Side</div>
+    <button class="nav-btn active" data-tab="c1"><span class="n">1</span>Home</button>
+    <button class="nav-btn" data-tab="c2"><span class="n">2</span>Build Your PC</button>
+    <button class="nav-btn" data-tab="c3"><span class="n">3</span>Component Catalog</button>
+    <button class="nav-btn" data-tab="c4"><span class="n">4</span>Product Detail</button>
+    <button class="nav-btn" data-tab="c5"><span class="n">5</span>Cart &amp; Checkout</button>
+
+    <div class="group-label">Admin Side</div>
+    <button class="nav-btn" data-tab="a1"><span class="n">6</span>Login &amp; Dashboard</button>
+    <button class="nav-btn" data-tab="a2"><span class="n">7</span>Manage Components</button>
+    <button class="nav-btn" data-tab="a3"><span class="n">8</span>Manage Orders</button>
+    <button class="nav-btn" data-tab="a4"><span class="n">9</span>Manage Users</button>
+    <button class="nav-btn" data-tab="a5"><span class="n">10</span>Reports &amp; Analytics</button>
+  </div>
+
+  <div class="main">
+
+    <!-- C1 HOME -->
+    <div class="tabpane active" id="c1">
+      <div class="page-title">1. Home Page</div>
+      <div class="page-desc">First screen a visitor lands on. Sells the idea of building a custom PC and routes traffic to the two main actions: start a build, or browse parts.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="col" style="gap:10px;">
+          <div class="row">
+            <div class="wf-box solid" style="height:40px; width:110px;">LOGO</div>
+            <div class="wf-box grow" style="height:40px;">Home &nbsp; Build PC &nbsp; Components &nbsp; Deals &nbsp; About</div>
+            <div class="wf-box solid" style="height:40px; width:90px;">🔍 Search</div>
+            <div class="wf-box solid" style="height:40px; width:70px;">Cart(0)</div>
+            <div class="wf-box solid" style="height:40px; width:80px;">Login</div>
+          </div>
+          <div class="wf-box accent" style="height:170px;">HERO BANNER — "Build Your Dream PC" + [Start Building] CTA button</div>
+          <div class="row">
+            <div class="wf-box grow" style="height:90px;">Category<br>CPU</div>
+            <div class="wf-box grow" style="height:90px;">Category<br>GPU</div>
+            <div class="wf-box grow" style="height:90px;">Category<br>RAM</div>
+            <div class="wf-box grow" style="height:90px;">Category<br>Storage</div>
+            <div class="wf-box grow" style="height:90px;">Category<br>Case</div>
+          </div>
+          <div class="wf-box" style="height:26px;">Featured / Best-selling components (label)</div>
+          <div class="row">
+            <div class="wf-box grow" style="height:120px;">Product Card</div>
+            <div class="wf-box grow" style="height:120px;">Product Card</div>
+            <div class="wf-box grow" style="height:120px;">Product Card</div>
+            <div class="wf-box grow" style="height:120px;">Product Card</div>
+          </div>
+          <div class="wf-box" style="height:60px;">Footer — links, socials, contact, copyright</div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Header</b>: logo, nav links, search, cart icon, login/account — persistent across all client pages.</li>
+          <li><b>Hero</b>: single strong CTA — "Start Building" — drives users into the configurator (Page 2).</li>
+          <li><b>Category tiles</b>: quick shortcuts into the catalog filtered by part type.</li>
+          <li><b>Featured products</b>: merchandising strip to surface popular/discounted parts.</li>
+          <li><b>Footer</b>: standard trust/info links.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C2 BUILD PC -->
+    <div class="tabpane" id="c2">
+      <div class="page-title">2. Build Your PC (Configurator)</div>
+      <div class="page-desc">The core feature of the project — a step-by-step selector where the user picks one component per category and sees a running build summary + compatibility checks.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="col" style="gap:10px;">
+          <div class="wf-box solid" style="height:36px;">Header (same as Home)</div>
+          <div class="row">
+            <div class="wf-box" style="height:400px; width:190px; flex-direction:column;">
+              STEP LIST<br><br>
+              ✅ 1. CPU<br>
+              ▶ 2. Motherboard<br>
+              &nbsp;3. RAM<br>
+              &nbsp;4. GPU<br>
+              &nbsp;5. Storage<br>
+              &nbsp;6. PSU<br>
+              &nbsp;7. Case
+            </div>
+            <div class="col grow" style="gap:8px;">
+              <div class="wf-box accent" style="height:30px;">Choose your Motherboard — compatible with selected CPU socket</div>
+              <div class="row">
+                <div class="wf-box grow" style="height:150px;">Component Card<br>(img, name, socket, price)<br>[Select]</div>
+                <div class="wf-box grow" style="height:150px;">Component Card<br>[Select]</div>
+                <div class="wf-box grow" style="height:150px;">Component Card<br>[Select]</div>
+              </div>
+              <div class="wf-box" style="height:40px;">⚠ Compatibility notice area (socket / wattage / size warnings)</div>
+            </div>
+            <div class="wf-box solid" style="height:400px; width:200px; flex-direction:column;">
+              LIVE BUILD SUMMARY<br><br>
+              CPU: Ryzen 7 — $320<br>
+              MoBo: —<br>
+              RAM: —<br>
+              GPU: —<br>
+              Storage: —<br>
+              PSU: —<br>
+              Case: —<br><br>
+              <b>Total: $320</b><br><br>
+              [Save Build] [Next →]
+            </div>
+          </div>
+          <div class="wf-box" style="height:44px;">Footer</div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Left step list</b>: shows progress through the build sequence; user can jump back to a completed step.</li>
+          <li><b>Center panel</b>: component options for the current step, filtered to only what's compatible so far.</li>
+          <li><b>Compatibility notice</b>: surfaces logic errors (wrong socket, PSU wattage too low, case too small for GPU) before checkout.</li>
+          <li><b>Right sidebar</b>: persistent running total + summary, sticky while scrolling — this is what gets pushed to the Cart.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C3 CATALOG -->
+    <div class="tabpane" id="c3">
+      <div class="page-title">3. Component Catalog</div>
+      <div class="page-desc">Browse all parts of one type independent of the build flow — for users who want to shop a single component, or research before building.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="col" style="gap:10px;">
+          <div class="wf-box solid" style="height:36px;">Header</div>
+          <div class="wf-box" style="height:26px;">Breadcrumb: Home / Components / CPU</div>
+          <div class="row">
+            <div class="wf-box" style="height:420px; width:190px; flex-direction:column;">
+              FILTERS<br><br>
+              Brand<br>☐ Intel ☐ AMD<br><br>
+              Price range<br>[slider]<br><br>
+              Socket type<br>☐ AM5 ☐ LGA1700<br><br>
+              Cores<br>☐ 6 ☐ 8 ☐ 12+<br><br>
+              [Apply]
+            </div>
+            <div class="col grow" style="gap:8px;">
+              <div class="row">
+                <div class="wf-box grow" style="height:30px;">Sort by: Price / Popularity / New</div>
+                <div class="wf-box" style="height:30px; width:120px;">Grid / List</div>
+              </div>
+              <div class="row"><div class="wf-box grow" style="height:150px;">Product Card</div><div class="wf-box grow" style="height:150px;">Product Card</div><div class="wf-box grow" style="height:150px;">Product Card</div></div>
+              <div class="row"><div class="wf-box grow" style="height:150px;">Product Card</div><div class="wf-box grow" style="height:150px;">Product Card</div><div class="wf-box grow" style="height:150px;">Product Card</div></div>
+              <div class="wf-box" style="height:30px;">[Pagination: 1 2 3 ... Next]</div>
+            </div>
+          </div>
+          <div class="wf-box" style="height:44px;">Footer</div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Filters sidebar</b>: brand, price, spec-based filters (socket, cores) so users narrow results fast.</li>
+          <li><b>Sort + view toggle</b>: standard e-commerce browsing controls.</li>
+          <li><b>Product grid</b>: each card links to Product Detail (Page 4).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C4 PRODUCT DETAIL -->
+    <div class="tabpane" id="c4">
+      <div class="page-title">4. Product Detail Page</div>
+      <div class="page-desc">Deep-dive on a single component — specs, price, stock, and a path to either add it standalone to cart or send it into an active build.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="col" style="gap:10px;">
+          <div class="wf-box solid" style="height:36px;">Header</div>
+          <div class="row">
+            <div class="wf-box" style="height:260px; width:280px;">Image Gallery<br>(main image + thumbnails)</div>
+            <div class="col grow" style="gap:8px;">
+              <div class="wf-box accent" style="height:36px;">AMD Ryzen 7 7800X3D — $389</div>
+              <div class="wf-box" style="height:70px;">Rating ★★★★☆ (128 reviews) &nbsp; | &nbsp; Stock: In Stock</div>
+              <div class="row">
+                <div class="wf-box grow" style="height:44px;">[Add to Cart]</div>
+                <div class="wf-box grow" style="height:44px;">[Add to Build]</div>
+              </div>
+              <div class="wf-box" style="height:80px;">Short description text block</div>
+            </div>
+          </div>
+          <div class="wf-box" style="height:26px;">Tabs: Specifications | Reviews | Q&amp;A</div>
+          <div class="wf-box" style="height:140px;">Specifications Table — socket, cores, threads, TDP, base/boost clock, cache</div>
+          <div class="wf-box" style="height:26px;">Related components (compatible motherboards, coolers)</div>
+          <div class="row"><div class="wf-box grow" style="height:130px;">Related Card</div><div class="wf-box grow" style="height:130px;">Related Card</div><div class="wf-box grow" style="height:130px;">Related Card</div><div class="wf-box grow" style="height:130px;">Related Card</div></div>
+          <div class="wf-box" style="height:44px;">Footer</div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Gallery + buy box</b>: image, price, stock, and the two conversion paths — plain cart vs. feeding into the configurator.</li>
+          <li><b>Spec table</b>: the data a builder actually compares (socket/TDP/clock) — this also drives the compatibility engine in Page 2.</li>
+          <li><b>Related components</b>: cross-sell compatible parts (e.g. motherboards matching this CPU's socket).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C5 CART -->
+    <div class="tabpane" id="c5">
+      <div class="page-title">5. Cart &amp; Checkout</div>
+      <div class="page-desc">Final step of the client journey — review the build/items, enter shipping + payment, and place the order.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="col" style="gap:10px;">
+          <div class="wf-box solid" style="height:36px;">Header</div>
+          <div class="wf-box" style="height:26px;">Steps: ① Cart &nbsp;→&nbsp; ② Shipping &nbsp;→&nbsp; ③ Payment &nbsp;→&nbsp; ④ Confirm</div>
+          <div class="row">
+            <div class="col grow" style="gap:8px;">
+              <div class="wf-box" style="height:60px;">Cart line item — CPU — qty [1] — $389 — [Remove]</div>
+              <div class="wf-box" style="height:60px;">Cart line item — Motherboard — qty [1] — $210 — [Remove]</div>
+              <div class="wf-box" style="height:60px;">Cart line item — RAM — qty [1] — $95 — [Remove]</div>
+              <div class="wf-box" style="height:120px;">Shipping Address Form — name, address, city, pincode, phone</div>
+              <div class="wf-box" style="height:100px;">Payment Method — Card / UPI / COD [radio options]</div>
+            </div>
+            <div class="wf-box solid" style="height:340px; width:220px; flex-direction:column;">
+              ORDER SUMMARY<br><br>
+              Subtotal: $694<br>
+              Shipping: $10<br>
+              Tax: $35<br><br>
+              <b>Total: $739</b><br><br>
+              [Place Order]
+            </div>
+          </div>
+          <div class="wf-box" style="height:44px;">Footer</div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Progress steps</b>: sets expectations for how many steps remain to complete the purchase.</li>
+          <li><b>Editable line items</b>: quantities/removal still possible at this stage.</li>
+          <li><b>Sticky order summary</b>: totals always visible; final commitment button is isolated and obvious.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A1 ADMIN LOGIN/DASHBOARD -->
+    <div class="tabpane" id="a1">
+      <div class="page-title">6. Admin Login &amp; Dashboard</div>
+      <div class="page-desc">Gatekeeper page plus the admin's home base: a snapshot of store health at a glance.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="col" style="gap:10px;">
+          <div class="row" style="height:220px;">
+            <div class="wf-box grow" style="height:220px;">LOGIN FORM<br><br>Email: [_______]<br>Password: [_______]<br>[Login]</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-desc" style="margin-top:10px;">↓ after login →</div>
+      <div class="frame" style="padding:14px;">
+        <div class="row" style="align-items:stretch;">
+          <div class="wf-box" style="width:170px; flex-direction:column; height:460px;">
+            SIDE NAV<br><br>
+            ▶ Dashboard<br>
+            Components<br>
+            Orders<br>
+            Users<br>
+            Reports<br>
+            Settings<br>
+            Logout
+          </div>
+          <div class="col grow" style="gap:10px;">
+            <div class="wf-box solid" style="height:36px;">Topbar — Admin name, notifications</div>
+            <div class="row">
+              <div class="wf-box grow accent" style="height:70px;">Total Orders<br>1,204</div>
+              <div class="wf-box grow accent" style="height:70px;">Revenue<br>$482,300</div>
+              <div class="wf-box grow accent" style="height:70px;">Active Users<br>3,410</div>
+              <div class="wf-box grow accent" style="height:70px;">Low Stock<br>7 items</div>
+            </div>
+            <div class="row">
+              <div class="wf-box grow" style="height:200px;">Chart: Sales over time (line chart)</div>
+              <div class="wf-box" style="height:200px; width:250px;">Top-selling components (list)</div>
+            </div>
+            <div class="wf-box" style="height:90px;">Recent Orders table (last 5)</div>
+          </div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Login</b>: simple, no distractions — protects the whole admin panel.</li>
+          <li><b>Side nav</b>: consistent across all admin pages, so switching sections is one click.</li>
+          <li><b>Stat cards</b>: the 4 numbers an admin checks daily at a glance.</li>
+          <li><b>Charts + recent orders</b>: quick trend read + shortcut into deeper detail.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A2 MANAGE COMPONENTS -->
+    <div class="tabpane" id="a2">
+      <div class="page-title">7. Manage Components (CRUD)</div>
+      <div class="page-desc">Where the admin maintains the actual product catalog — the CPUs, GPUs, RAM etc. shown on the client side.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="row" style="align-items:stretch;">
+          <div class="wf-box" style="width:170px; height:440px;">Side Nav</div>
+          <div class="col grow" style="gap:10px;">
+            <div class="row">
+              <div class="wf-box grow" style="height:34px;">🔍 Search components...</div>
+              <div class="wf-box" style="height:34px; width:150px;">Filter: Category ▾</div>
+              <div class="wf-box accent" style="height:34px; width:140px;">[+ Add Component]</div>
+            </div>
+            <div class="wf-box" style="height:340px; flex-direction:column;">
+              TABLE — Columns: Image | Name | Category | Price | Stock | Status | Actions<br><br>
+              Row: Ryzen 7 7800X3D | CPU | $389 | 42 | Active | [Edit][Delete]<br>
+              Row: RTX 4070 | GPU | $599 | 3 | Low Stock | [Edit][Delete]<br>
+              Row: Corsair 16GB | RAM | $95 | 120 | Active | [Edit][Delete]<br>
+              ...<br><br>
+              [Pagination]
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-desc" style="margin-top:10px;">↓ Add/Edit modal or side panel →</div>
+      <div class="frame" style="padding:14px;">
+        <div class="wf-box" style="height:260px; flex-direction:column;">
+          ADD / EDIT COMPONENT FORM<br><br>
+          Name: [______]  Category: [dropdown]<br>
+          Price: [______]  Stock qty: [______]<br>
+          Socket/Spec fields (dynamic per category): [______]<br>
+          Image upload: [______]<br>
+          Description: [______]<br><br>
+          [Cancel]  [Save Component]
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Data table</b>: core listing with inline status (stock/active) and row-level actions.</li>
+          <li><b>Add/Edit form</b>: dynamic fields per category, since a CPU's specs differ from a case's.</li>
+          <li>This page directly feeds the <b>Catalog (Page 3)</b> and <b>Configurator (Page 2)</b> on the client side.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A3 MANAGE ORDERS -->
+    <div class="tabpane" id="a3">
+      <div class="page-title">8. Manage Orders</div>
+      <div class="page-desc">Track and update every customer order placed via the Cart/Checkout page.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="row" style="align-items:stretch;">
+          <div class="wf-box" style="width:170px; height:440px;">Side Nav</div>
+          <div class="col grow" style="gap:10px;">
+            <div class="row">
+              <div class="wf-box grow" style="height:34px;">🔍 Search by Order ID / Customer</div>
+              <div class="wf-box" style="height:34px; width:160px;">Status: All ▾</div>
+              <div class="wf-box" style="height:34px; width:130px;">Date range ▾</div>
+            </div>
+            <div class="wf-box" style="height:340px; flex-direction:column;">
+              TABLE — Order ID | Customer | Items | Total | Status | Date | Actions<br><br>
+              #1042 | R. Shah | 5 parts | $739 | Processing | 25 Aug | [View]<br>
+              #1041 | K. Mehta | 3 parts | $410 | Shipped | 24 Aug | [View]<br>
+              #1040 | A. Patel | 7 parts | $1,290 | Delivered | 23 Aug | [View]<br>
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-desc" style="margin-top:10px;">↓ Order detail view →</div>
+      <div class="frame" style="padding:14px;">
+        <div class="col" style="gap:10px;">
+          <div class="wf-box" style="height:34px;">Order #1042 — Placed 25 Aug — Status: [dropdown: Processing/Shipped/Delivered/Cancelled]</div>
+          <div class="row">
+            <div class="wf-box grow" style="height:160px;">Ordered components list (build breakdown)</div>
+            <div class="wf-box" style="height:160px; width:250px;">Customer &amp; shipping details</div>
+          </div>
+          <div class="wf-box" style="height:40px;">[Update Status]  [Print Invoice]</div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Filterable table</b>: find orders fast by status/date/customer.</li>
+          <li><b>Detail view</b>: full build breakdown + shipping info + a status dropdown to move the order through its lifecycle.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A4 MANAGE USERS -->
+    <div class="tabpane" id="a4">
+      <div class="page-title">9. Manage Users</div>
+      <div class="page-desc">Customer account oversight — view activity, saved builds, and moderate accounts if needed.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="row" style="align-items:stretch;">
+          <div class="wf-box" style="width:170px; height:400px;">Side Nav</div>
+          <div class="col grow" style="gap:10px;">
+            <div class="wf-box" style="height:34px;">🔍 Search users by name/email</div>
+            <div class="wf-box" style="height:320px; flex-direction:column;">
+              TABLE — Name | Email | Orders | Joined | Status | Actions<br><br>
+              R. Shah | r.shah@mail.com | 4 | Jan 2026 | Active | [View][Block]<br>
+              K. Mehta | k.mehta@mail.com | 2 | Mar 2026 | Active | [View][Block]<br>
+              A. Patel | a.patel@mail.com | 9 | Nov 2025 | Blocked | [View][Unblock]<br>
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>User table</b>: quick view of order count and account status.</li>
+          <li><b>View action</b>: opens a profile with order history and saved builds for support purposes.</li>
+          <li><b>Block/Unblock</b>: simple moderation control.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A5 REPORTS -->
+    <div class="tabpane" id="a5">
+      <div class="page-title">10. Reports &amp; Analytics</div>
+      <div class="page-desc">Deeper business insight beyond the dashboard snapshot — for decisions on stock, pricing, and promotions.</div>
+      <div class="frame" style="padding:14px;">
+        <div class="row" style="align-items:stretch;">
+          <div class="wf-box" style="width:170px; height:440px;">Side Nav</div>
+          <div class="col grow" style="gap:10px;">
+            <div class="row">
+              <div class="wf-box" style="height:34px; width:160px;">Date range ▾</div>
+              <div class="wf-box grow" style="height:34px;"></div>
+              <div class="wf-box accent" style="height:34px; width:120px;">[Export CSV]</div>
+            </div>
+            <div class="row">
+              <div class="wf-box grow" style="height:180px;">Revenue trend (line chart)</div>
+              <div class="wf-box grow" style="height:180px;">Orders by category (bar chart)</div>
+            </div>
+            <div class="row">
+              <div class="wf-box grow" style="height:150px;">Top 10 best-selling components (table)</div>
+              <div class="wf-box" style="height:150px; width:250px;">Revenue by category (pie chart)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="annot">
+        <h3>Purpose &amp; key elements</h3>
+        <ul>
+          <li><b>Charts</b>: revenue trend and category breakdown for quick pattern spotting.</li>
+          <li><b>Top sellers table</b>: informs restocking and promo decisions.</li>
+          <li><b>Export</b>: pulls data out for offline reporting (Excel/CSV).</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.nav-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.tabpane').forEach(p=>p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
